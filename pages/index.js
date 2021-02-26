@@ -12,7 +12,7 @@ export default function Home({ allPostsData }) {
 				<title>{siteTitle}</title>
 			</Head>
 			<section className={utilStyles.headingMd}>
-				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis obcaecati et excepturi dignissimos tempora possimus vero unde suscipit, illum nemo, minima iure recusandae sed accusamus voluptatum at, ab consequatur magnam!</p>
+				<p>Volutpat laoreet ad euismod habitasse curae praesent tristique augue. Sodales conubia euismod non duis fames lobortis mauris vivamus a orci ullamcorper. Mi erat amet maecenas montes pellentesque hendrerit natoque tempus.</p>
 				<p>
 					(This is a sample website - you’ll be building a site like this on{' '}
 					<a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
