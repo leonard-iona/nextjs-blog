@@ -6,6 +6,11 @@ import html from 'remark-html'
 
 const postsDirectory = path.join(process.cwd(), 'posts')
 
+interface IPost {
+	id: string;
+	date: string;
+}
+
 export function getSortedPostsData() {
 	// Get file names under /posts
 	const fileNames = fs.readdirSync(postsDirectory)
@@ -27,8 +32,11 @@ export function getSortedPostsData() {
 		}
 	})
 	// Sort posts by date
-	return allPostsData.sort((a, b) => {
-		if (a.date < b.date) {
+	return allPostsData.sort((a: IPost, b: IPost) => {
+		const aDate = new Date(a.date);
+		const bDate = new Date(b.date);
+
+		if (aDate.getTime() < bDate.getTime()) {
 			return 1
 		} else {
 			return -1
